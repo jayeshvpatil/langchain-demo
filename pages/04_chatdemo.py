@@ -53,12 +53,11 @@ with container:
             verbose=True,
             memory=ConversationBufferWindowMemory(k=2)
         )
-        response = conversion.predict(input=prompt)
-
-        
         # Display assistant response in chat message container
         with st.chat_message("assistant"):
-            st.write(response)
-        # Add assistant response to chat history
-        st.session_state.messages.append({"role": "assistant", "content": response})
+            with st.spinner("Thinking..."):
+                response = conversion.predict(input=prompt)
+                st.write(response)
+                # Add assistant response to chat history
+                st.session_state.messages.append({"role": "assistant", "content": response})
 
