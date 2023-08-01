@@ -23,6 +23,9 @@ with st.sidebar:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+if "messages" not in st.session_state or st.sidebar.button("Clear message history"):
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]    
+
 with st.chat_message("user"):
     st.write("Hello 👋")
 
