@@ -1,9 +1,10 @@
 import streamlit as st
 
-
+st.image("assets/logo.png")   
 st.title('LLM Demo Apps Home')
-
-
+st.markdown("""
+ [Langchain Demo Repo](https://github.com/jayeshvpatil/langchain-demo)
+            """)
 # Sidebar
 st.sidebar.header("About")
 st.sidebar.markdown(
@@ -17,6 +18,7 @@ st.sidebar.markdown("""
 - [Langchain Documentation](https://docs.langchain.com/docs/)                    
 """
 )
+                 
 
 with open(f"README.md", "r") as f:
     st.markdown(f.read())

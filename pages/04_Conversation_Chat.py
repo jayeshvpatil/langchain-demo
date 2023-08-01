@@ -12,7 +12,7 @@ st.header("Hey, I'm your Chat GPT")
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="langchain_api_key_openai", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[View the source code](https://github.com/jayeshvpatil/langchain-demo/blob/main/pages/01_langchain.py)"
+    "[View the source code](https://github.com/jayeshvpatil/langchain-demo/blob/main/pages/04_Conversation_Chat.py)"
     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
     if not openai_api_key:
