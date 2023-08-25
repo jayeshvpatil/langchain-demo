@@ -14,6 +14,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 
+st.title("Using Faiss Index for similarity search through medical database schema and generate sql")
 langchain.verbose = False
 loader = TextLoader("sample_data/metadata.txt")
 pages = loader.load_and_split()
