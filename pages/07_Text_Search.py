@@ -35,7 +35,7 @@ if not openai_api_key:
 question_list=[ "write a SQL query to Obtain the names of all physicians that have performed a medical procedure they have never been certified to perform.",
 "Write a SQL query to Obtain the names of all physicians that have performed a medical procedure that they are certified to perform, but such that the procedure was done at a date (Undergoes.Date) after the physician's certification expired (Trained_In.CertificationExpires).",
 "Write a SQL query. Here's some information: The hospital has several examination rooms where appointments take place. Obtain the number of appointments that have taken place in each examination room.",
-"Write a SQL query with Physician name, name of procedure, date when the procedure was carried out, name of the patient the procedure was carried out on, and date when the certification expired."
+"Write a SQL query with Physician name, name of procedure, date when the procedure was carried out, name of the patient the procedure was carried out on, and date when the certification expired.",
 "Write a SQL query to Obtain the names of all the nurses who have ever been on call for room 123."
 ]
 st.write(question_list)
